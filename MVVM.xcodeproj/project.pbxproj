@@ -13,6 +13,10 @@
 		B545904227048A9200411E89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B545904027048A9200411E89 /* Main.storyboard */; };
 		B545904427048A9700411E89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B545904327048A9700411E89 /* Assets.xcassets */; };
 		B545904727048A9700411E89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B545904527048A9700411E89 /* LaunchScreen.storyboard */; };
+		B54590512704936900411E89 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54590502704936900411E89 /* APIService.swift */; };
+		B5459054270493F500411E89 /* PublicAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5459053270493F500411E89 /* PublicAPIModel.swift */; };
+		B54590562704A45B00411E89 /* ApiListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54590552704A45B00411E89 /* ApiListView.swift */; };
+		B59BCF502708A07E00D848AF /* PublicAPIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59BCF4F2708A07E00D848AF /* PublicAPIViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B545904327048A9700411E89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B545904627048A9700411E89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B545904827048A9700411E89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B54590502704936900411E89 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		B5459053270493F500411E89 /* PublicAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicAPIModel.swift; sourceTree = "<group>"; };
+		B54590552704A45B00411E89 /* ApiListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiListView.swift; sourceTree = "<group>"; };
+		B59BCF4F2708A07E00D848AF /* PublicAPIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicAPIViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +67,56 @@
 				B545903A27048A9200411E89 /* AppDelegate.swift */,
 				B545903C27048A9200411E89 /* SceneDelegate.swift */,
 				B545903E27048A9200411E89 /* ViewController.swift */,
+				B545904F2704935400411E89 /* APIService */,
+				B545904E2704934000411E89 /* MVVM */,
 				B545904027048A9200411E89 /* Main.storyboard */,
 				B545904327048A9700411E89 /* Assets.xcassets */,
 				B545904527048A9700411E89 /* LaunchScreen.storyboard */,
 				B545904827048A9700411E89 /* Info.plist */,
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		B545904E2704934000411E89 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				B5459052270493C500411E89 /* Model */,
+				B54590572704A57A00411E89 /* View */,
+				B59BCF4E2708A04C00D848AF /* ViewModel */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		B545904F2704935400411E89 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				B54590502704936900411E89 /* APIService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		B5459052270493C500411E89 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5459053270493F500411E89 /* PublicAPIModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B54590572704A57A00411E89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B54590552704A45B00411E89 /* ApiListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B59BCF4E2708A04C00D848AF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B59BCF4F2708A07E00D848AF /* PublicAPIViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +191,11 @@
 			files = (
 				B545903F27048A9200411E89 /* ViewController.swift in Sources */,
 				B545903B27048A9200411E89 /* AppDelegate.swift in Sources */,
+				B59BCF502708A07E00D848AF /* PublicAPIViewModel.swift in Sources */,
+				B54590562704A45B00411E89 /* ApiListView.swift in Sources */,
+				B54590512704936900411E89 /* APIService.swift in Sources */,
 				B545903D27048A9200411E89 /* SceneDelegate.swift in Sources */,
+				B5459054270493F500411E89 /* PublicAPIModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +343,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CT2T2S8RGW;
+				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = MVVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,7 +364,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CT2T2S8RGW;
+				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = MVVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
